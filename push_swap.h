@@ -8,6 +8,15 @@
 
 typedef struct s_stack_node
 {
+    int                 nbr;
+    int                 index;
+    int                 push_cost;
+    int                 above_median;
+    int                 cheapest;
+
+    struct s_stack_node *next;
+    struct s_stack_node *prev;
+    
 }
 
 #endif
