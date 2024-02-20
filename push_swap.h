@@ -19,4 +19,16 @@ typedef struct s_stack_node
     
 }   t_stack_node;
 
+// Error handlers
+
+// Stack init
+
+// Nodes init
+
+// Stack utils
+
+// Commands
+
+// Algorthims
+
 #endif
