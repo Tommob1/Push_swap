@@ -10,3 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "push_swap.h"
+
+static int  count_words(char *s, char c)
+{
+    int count;
+    int inside_word;
+
+    count = 0;
+
+}
