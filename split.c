@@ -72,7 +72,7 @@ char    **split(char *s, char c)
     result_array = malloc(sizeof(char *) * (size_t)(word_count + 2));
     if (!result_array)
         return (NULL);
-    while (word_count-- >= 0)
+    while (word_count-- >= 0) //!=?
     {
         if (i == 0)
         {
