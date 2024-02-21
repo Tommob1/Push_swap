@@ -58,3 +58,10 @@ static char *get_next_word(char *s, char *c)
     next_word[i] = '\0';
     return (next_word);
 }
+
+char    **split(char *s, char c)
+{
+    int     word_count;
+    char    **result_array;
+    int     i;
+}
