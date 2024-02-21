@@ -46,4 +46,15 @@ static char *get_next_word(char *s, char *c)
     cursor = 0;
     len = 0;
     i = 0;
+    while (s[cursor] == c)
+        ++cursor;
+    while ((s[cursor + len] != c) && s[cursor + len])
+        ++len;
+    next_word = malloc((size_t)len * sizeof(char) + 1);
+    if (!next_word)
+        return(NULL);
+    while ((s[cursor] != c) && s[cursor])
+        next_word[i++] = s[cursor++];
+    next_word[i] = '\0';
+    return (next_word);
 }
