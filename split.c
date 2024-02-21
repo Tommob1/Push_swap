@@ -64,4 +64,12 @@ char    **split(char *s, char c)
     int     word_count;
     char    **result_array;
     int     i;
+
+    i = 0;
+    word_count = count_words(s, c);
+    if (!word_count)
+        exit(1);
+    result_array = malloc(sizeof(char *) * (size_t)(word_count + 2));
+    if (!result_array)
+        return (NULL);
 }
