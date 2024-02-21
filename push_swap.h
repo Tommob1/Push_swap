@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/02/20 16:07:16 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/02/21 11:26:39 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ typedef struct s_stack_node
 
 // Error handlers
 
-// Stack init
+// Linked-list init
 
 // Nodes init
 
