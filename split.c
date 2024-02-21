@@ -35,3 +35,15 @@ static int  count_words(char *s, char c)
     }
     return (count);
 }
+
+static char *get_next_word(char *s, char *c)
+{
+    static int  cursor;
+    char         *next_word;
+    int         len;
+    int         i;
+
+    cursor = 0;
+    len = 0;
+    i = 0;
+}
