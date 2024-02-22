@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 14:02:11 by btomlins          #+#    #+#             */
-/*   Updated: 2024/02/21 14:26:48 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/02/22 17:09:31 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,15 @@ static long ft_atol(const char *s)
 
 static void append_node(t_stack_node **stack, int n)
 {
+    t_stack_node    *node;
+    t_stack_node    *last_node;
+
+    if (!stack)
+        return;
+    node = malloc(sizeof(t_stack_node));
+    if (!node)
+        return;
+    node->next = NULL;
+    node->nbr = n;
     
 }
