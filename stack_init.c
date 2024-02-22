@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 14:02:11 by btomlins          #+#    #+#             */
-/*   Updated: 2024/02/22 17:12:07 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/02/22 17:19:20 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,25 @@ static void append_node(t_stack_node **stack, int n)
         last_node = find_last(*stack);
         last_node->next = node;
         node->prev = last_node;
+    }
+}
+
+void    init_stack_a(t_stack_node **a, char **argv)
+{
+    long    n;
+    int     i;
+
+    i = 0;
+    while (argv[i])
+    {
+        if (error_syntax(argv[i]))
+            free_errors(a);
+        n = ft_atol(argv[i]);
+        if (n > INT_MAX || n < INT_MIN)
+            free_errors(a);
+        if (error_duplicate(*a, (int)n))
+            free_errors(a);
+        append_node(a, (int)n);
+        i++;
     }
 }
