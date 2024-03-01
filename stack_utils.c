@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 16:36:14 by btomlins          #+#    #+#             */
-/*   Updated: 2024/03/01 12:42:54 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/03/01 12:48:46 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,12 @@ t_stack_node    *find_min(t_stack_node *stack)
     min = LONG_MAX;
     while (stack)
     {
-        
+        if (stack->nbr < min)
+        {
+            min = stack->nbr;
+            min_node = stack;
+        }
+        stack = stack->next;
     }
+    return (min_node);
 }
