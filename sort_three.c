@@ -6,7 +6,13 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 16:09:50 by btomlins          #+#    #+#             */
-/*   Updated: 2024/03/08 16:09:52 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/03/08 16:12:59 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "push_swap.h"
+
+void    sort_three(t_stack_node **a)
+{
+    
+}
