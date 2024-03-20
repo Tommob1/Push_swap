@@ -24,5 +24,11 @@ void    current_index(t_stack_node *stack)
     while (stack)
     {
         stack->index = i;
+        if (i <= median)
+            stack->above_median = true;
+        else
+            stack->above_median = false;
+        stack = stack->next;
+        ++i;
     }
 }
