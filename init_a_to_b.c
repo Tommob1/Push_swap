@@ -20,4 +20,9 @@ void    current_index(t_stack_node *stack)
     i = 0;
     if (!stack)
         return ;
+    median = stack_len(stack) / 2;
+    while (stack)
+    {
+        stack->index = i;
+    }
 }
