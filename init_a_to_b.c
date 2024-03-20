@@ -38,4 +38,14 @@ static void set_target_a(t_stack_node *a, t_stack_node *b)
     t_stack_node    *current_b;
     t_stack_node    *target_node;
     long            best_match_index;
+
+    while (a)
+    {
+        best_match_index = LONG_MIN;
+        current_b = b;
+        while (current_b)
+        {
+            
+        }
+    }
 }
