@@ -60,3 +60,8 @@ static void set_target_a(t_stack_node *a, t_stack_node *b)
         a = a->next;
     }
 }
+
+static void cost_analysis_a(t_stack_node *a, t_stack_node *b)
+{
+    
+}
