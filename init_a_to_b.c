@@ -63,5 +63,23 @@ static void set_target_a(t_stack_node *a, t_stack_node *b)
 
 static void cost_analysis_a(t_stack_node *a, t_stack_node *b)
 {
-    
+    int    len_a;
+    int    len_b;
+
+    len_a = stack_len(a);
+    len_b = stack_len(b);
+
+    while (a)
+    {
+        
+    }
+}
+
+void    init_nodes_a(t_stack_node *a, t_stack_node *b)
+{
+    current_index(a);
+    current_index(b);
+    set_target_a(a, b);
+    cost_analysis_a(a, b);
+    set_cheapest(a);    
 }
