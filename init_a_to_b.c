@@ -48,8 +48,10 @@ static void set_target_a(t_stack_node *a, t_stack_node *b)
             if (current_b->nbr < a->nbr
                 && current_b->nbr > best_match_index)
             {
-
+                best_match_index = current_b->next;
+                target_node = current_b;
             }
+            current_b = current_b->next;
         }
     }
 }
