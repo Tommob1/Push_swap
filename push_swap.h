@@ -6,17 +6,17 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/04 14:37:43 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/04 15:07:13 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#define PUSH_SWAP_H
 
-# include <stdbool.h>
-# include <limits.h>
-# include <../libft/libft.h>
-# include <../libft/ft_printf.h>
+#include <stdbool.h>
+#include <limits.h>
+#include <../libft/libft.h>
+#include <../libft/ft_printf.h>
 
 typedef struct s_stack_node
 {
