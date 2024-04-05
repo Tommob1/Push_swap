@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/05 14:39:33 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/05 14:46:58 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 #include <stdbool.h>
 #include <limits.h>
-#include <../libft/libft.h>
-#include <../libft/ft_printf.h>
+#include "../libft/libft.h"
+#include "../libft/ft_printf.h"
 
 typedef struct s_stack_node
 {
@@ -38,6 +38,8 @@ void    free_stack(t_stack_node **stack);
 void    free_errors(t_stack_node    **a)
 
 // Linked-list init
+void    init_stack_a(t_stack_node   **a, char   **argv);
+char    **split(char    *s, char    c);
 
 // Nodes init
 
