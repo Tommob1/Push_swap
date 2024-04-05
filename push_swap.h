@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/05 14:49:10 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/05 16:34:21 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ void    init_stack_a(t_stack_node   **a, char   **argv);
 char    **split(char    *s, char    c);
 
 // Nodes init
+void    init_nodes_a(t_stack_node   *a, t_stack_node    *b);
+void    init_nodes_b(t_stack_node   *a, t_stack_node    *b);
 
 // Stack utils
 
