@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/11 15:17:46 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/11 15:22:29 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,7 @@ void			pa(t_stack_node **a, t_stack_node **b, bool print);
 void			pb(t_stack_node **b, t_stack_node **a, bool print);
 
 // Algorthims
+void            sort_three(t_stack_node **a);
+void            sort_stacks(t_stack_node **a, t_stack_node **b);
 
 #endif
