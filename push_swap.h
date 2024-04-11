@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/11 14:05:16 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/11 15:17:46 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,17 @@ t_stack_node	*find_min(t_stack_node *stack);
 t_stack_node	*find_max(t_stack_node *stack);
 
 // Commands
-void    sa(t_stack_node **a, bool print);
-void    sb(t_stack_node **b, bool print);
-void    ss(t_stack_node **a, t_stack_node **b, bool print);
+void            sa(t_stack_node **a, bool print);
+void            sb(t_stack_node **b, bool print);
+void            ss(t_stack_node **a, t_stack_node **b, bool print);
+void			ra(t_stack_node **a, bool print);
+void			rb(t_stack_node **b, bool print);
+void			rr(t_stack_node **a, t_stack_node **b, bool print);
+void			rra(t_stack_node **a, bool print);
+void			rrb(t_stack_node **b, bool print);
+void			rrr(t_stack_node **a, t_stack_node **b, bool print);
+void			pa(t_stack_node **a, t_stack_node **b, bool print);
+void			pb(t_stack_node **b, t_stack_node **a, bool print);
 
 // Algorthims
 
