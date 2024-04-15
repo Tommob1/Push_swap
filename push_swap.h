@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/15 16:45:40 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/15 16:46:20 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,17 @@ typedef struct s_stack_node
     
 }   t_stack_node;
 
-// Error handlers
+//Error handlers
 int     error_syntax(char   *str_n);
 int     error_duplicate(t_stack_node    *a, int n);
 void    free_stack(t_stack_node **stack);
 void    free_errors(t_stack_node    **a);
 
-// Linked-list init
+//Linked-list init
 void    init_stack_a(t_stack_node   **a, char   **argv);
 char    **split(char    *s, char    c);
 
-// Nodes init
+//Nodes init
 void            init_nodes_a(t_stack_node   *a, t_stack_node    *b);
 void            init_nodes_b(t_stack_node   *a, t_stack_node    *b);
 void            current_index(t_stack_node  *stack);
@@ -49,14 +49,14 @@ void            set_cheapest(t_stack_node   *stack);
 t_stack_node    *get_cheapest(t_stack_node  *stack);
 void            prep_for_push(t_stack_node  **s, t_stack_node   *n, char c);
 
-// Stack utils
+//Stack utils
 int				stack_len(t_stack_node *stack);
 t_stack_node	*find_last(t_stack_node *stack);
 bool			stack_sorted(t_stack_node *stack);
 t_stack_node	*find_min(t_stack_node *stack);
 t_stack_node	*find_max(t_stack_node *stack);
 
-// Commands
+//Commands
 void            sa(t_stack_node **a, bool print);
 void            sb(t_stack_node **b, bool print);
 void            ss(t_stack_node **a, t_stack_node **b, bool print);
@@ -69,7 +69,7 @@ void			rrr(t_stack_node **a, t_stack_node **b, bool print);
 void			pa(t_stack_node **a, t_stack_node **b, bool print);
 void			pb(t_stack_node **b, t_stack_node **a, bool print);
 
-// Algorthims
+//Algorthims
 void            sort_three(t_stack_node **a);
 void            sort_stacks(t_stack_node **a, t_stack_node **b);
 
