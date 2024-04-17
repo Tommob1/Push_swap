@@ -6,33 +6,63 @@
 #    By: btomlins <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/20 12:21:22 by btomlins          #+#    #+#              #
-#    Updated: 2024/03/01 14:08:24 by btomlins         ###   ########.fr        #
+#    Updated: 2024/04/17 14:00:16 by btomlins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-COMP = gcc -Wall -Werror -Wextra
+NAME				= push_swap
 
-NAME = push_swap.a
+LIBFT				= ./libft/libft.a
+INC					= inc/
+SRC_DIR				= srcs/
+OBJ_DIR				= obj/
 
-SRC = 
+CC					= gcc
+CFLAGS				= -Wall -Werror -Wextra -I
+RM					= rm -f
 
-OBJ = 
+COMMANDS_DIR		=	$(SRC_DIR)commands/push.c \
+						$(SRC_DIR)commands/rev_rotate.c \
+						$(SRC_DIR)commands/rotate.c \
+						$(SRC_DIR)commands/sort_stacks.c \
+						$(SRC_DIR)commands/sort_three.c \
+						$(SRC_DIR)commands/swap.c
 
-RM = rm -f
+PUSH_SWAP_DIR		=	$(SRC_DIR)push_swap/handle_errors.c \
+						$(SRC_DIR)push_swap/init_a_to_b.c \
+						$(SRC_DIR)push_swap/init_b_to_a.c \
+						$(SRC_DIR)push_swap/push_swap.c \
+						$(SRC_DIR)push_swap/split.c \
+						$(SRC_DIR)push_swap/stack_init.c \
+						$(SRC_DIR)push_swap/stack_utils.c
 
-all: $(NAME)
+SRCS 				= $(COMMANDS_DIR) $(PUSH_SWAP_DIR)
 
-%.o: %.c
-	$(COMP) -o $@ -c $<
+OBJ 				= $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRCS))
 
-$(NAME):	$(OBJ)
-	$(COMP) -c $(SRC) -I./
-	ar rc $(NAME) $(OBJ)
+start:				
+					@make all
+
+$(LIBFT):
+					@make -C ./libft
+
+all: 				$(NAME)
+
+$(NAME): 			$(OBJ) $(LIBFT)
+					@$(CC) $(CFLAGS) $(INC) $(OBJ) $(LIBFT) -o $(NAME)
+
+$(OBJ_DIR)%.o:		$(SRC_DIR)%.c 
+					@mkdir -p $(@D)
+					@$(CC) $(CFLAGS) $(INC) -c $< -o $@
 
 clean:
-	$(RM) $(OBJ)
+					@$(RM) -r $(OBJ_DIR)
+					@make clean -C ./libft
 
-fclean:	clean
-	$(RM) $(NAME)
+fclean: 			clean
+					@$(RM) $(NAME)
+					@$(RM) $(LIBFT)
 
-re:	fclean all
+re: 				fclean all
+
+.PHONY: 			start all clean fclean re
