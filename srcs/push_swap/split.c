@@ -36,7 +36,7 @@ static int  count_words(char *s, char c)
     return (count);
 }
 
-static char *get_next_word(char *s, char *c)
+static char *get_next_word(char *s, char c)
 {
     static int  cursor;
     char         *next_word;
