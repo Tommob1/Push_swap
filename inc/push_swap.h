@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/17 14:05:42 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/18 18:26:06 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 #include <stdbool.h>
 #include <limits.h>
 #include "../libft/libft.h"
-#include "../libft/ft_printf.h"
 
 typedef struct s_stack_node
 {
