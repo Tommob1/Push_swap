@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/28 17:50:53 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/04 16:35:13 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/18 18:15:15 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,5 @@ void	rr(t_stack_node	**a, t_stack_node	**b, bool	print)
 	rotate(a);
 	rotate(b);
 	if (!print)
-			fr_printf("rr\n");
+			ft_printf("rr\n");
 }
