@@ -6,11 +6,11 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:59:46 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/18 18:17:06 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/19 16:26:34 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../../inc/push_swap.h"
 
 static void move_a_to_b(t_stack_node **a, t_stack_node **b)
 {

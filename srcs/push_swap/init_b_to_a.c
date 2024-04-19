@@ -6,11 +6,11 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 16:11:53 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/15 16:17:03 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/19 16:26:40 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../../inc/push_swap.h"
 
 static void set_target_b(t_stack_node *a, t_stack_node *b)
 {

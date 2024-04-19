@@ -6,11 +6,11 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 16:19:00 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/15 16:22:16 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/19 16:26:41 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../../inc/push_swap.h"
 
 int main(int argc, char **argv)
 {

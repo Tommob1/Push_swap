@@ -6,11 +6,11 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 16:36:14 by btomlins          #+#    #+#             */
-/*   Updated: 2024/03/01 14:08:54 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/19 16:26:44 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../../inc/push_swap.h"
 
 bool    stack_sorted(t_stack_node   *stack)
 {
