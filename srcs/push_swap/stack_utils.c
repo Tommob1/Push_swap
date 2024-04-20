@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 16:36:14 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/20 14:14:40 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/20 14:16:47 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,17 @@
 
 int     stack_len(t_stack_node  *stack)
 {
-    
+    int count;
+
+    if (!stack)
+        return (0);
+    count = 0;
+    while (stack)
+    {
+        stack = stack->next;
+        count++;
+    }
+    return(count);
 }
 
 t_stack_node    *find_last(t_stack_node *stack)
