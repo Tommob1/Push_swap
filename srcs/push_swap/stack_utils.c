@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 16:36:14 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/20 14:17:52 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/20 14:20:11 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,20 @@ t_stack_node    *find_min(t_stack_node *stack)
 
 t_stack_node    *find_max(t_stack_node  *stack)
 {
+    long            max;
+    t_stack_node    *max_node;
 
+    if (!stack)
+        return(NULL);
+    max = LONG_MIN;
+    while (stack)
+    {
+        if (stack->nbr > max)
+        {
+            max = stack->nbr;
+            max_node = stack;
+        }
+        stack = stack->next;
+    }
+    return (max_node);
 }
