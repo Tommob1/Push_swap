@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 14:02:11 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/19 16:26:43 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/20 14:25:10 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,4 +76,23 @@ void    init_stack_a(t_stack_node **a, char **argv)
         append_node(a, (int)n);
         i++;
     }
+}
+
+t_stack_node    *get_cheapest(t_stack_node  *stack)
+{
+    if (!stack)
+        return NULL;
+    while (stack)
+    {
+        if (stack->cheapest)
+            return (stack);
+        stack = stack->next;
+    }
+    return (NULL);
+}
+
+void    prep_for_push(t_stack_node  **stack, t_stack_node *top_node, 
+                        char stack_name)
+{
+
 }
