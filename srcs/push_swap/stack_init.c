@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 14:02:11 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/20 14:25:10 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/20 14:27:35 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,5 +94,21 @@ t_stack_node    *get_cheapest(t_stack_node  *stack)
 void    prep_for_push(t_stack_node  **stack, t_stack_node *top_node, 
                         char stack_name)
 {
-
+    while (*stack != top_node)
+    {
+        if (stack_name == 'a')
+        {
+            if (top_node->above_median)
+                ra(stack, false);
+            else
+                rra(stack, false);
+        }
+        else if (stack_name == 'b')
+        {
+            if (top_node->above_median)
+                rb(stack, false);
+            else
+                rrb(stack, false);
+        }
+    }
 }
