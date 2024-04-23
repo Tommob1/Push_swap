@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 14:04:06 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/23 12:48:59 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:02:57 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putchar_fd(char c, int fd);
+void	ft_putchar(char c);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
@@ -72,11 +73,9 @@ int				ft_printf(const char *format, ...);
 int				printf_char(int c);
 int				printf_ptstr(char *str);
 int				printf_ptint(int nb);
-int				printf_pt_unint(unsigned int un);
 int				printf_pthex(unsigned int un, const char format);
 int				printf_ptr(unsigned long long ptr);
 int				printf_percent(void);
 char			*ft_itoa(int n);
-
 
 #endif

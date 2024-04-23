@@ -6,10 +6,10 @@
 #    By: btomlins <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/14 11:43:16 by btomlins          #+#    #+#              #
-#    Updated: 2023/03/24 15:05:07 by btomlins         ###   ########.fr        #
+#    Updated: 2024/04/23 13:07:58 by btomlins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-FLAG = -Wall -Wextra -Werror
+
 
 CC = gcc
 
@@ -53,6 +53,8 @@ SOURCE = ft_bzero.c \
 		printf_hex.c \
 		printf_int.c \
 		printf_str.c \
+		printf_percent.c \
+		printf_ptr.c \
 		printf.c
 
 OBJECTS = $(SOURCE:.c=.o)

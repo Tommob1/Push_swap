@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   printf_percent.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/23 14:39:50 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/23 12:56:46 by btomlins         ###   ########.fr       */
+/*   Created: 2024/04/23 12:54:55 by btomlins          #+#    #+#             */
+/*   Updated: 2024/04/23 12:58:17 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//fd = file descriptor
-
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+int printf_percent(void)
 {
-	write(fd, &c, 1);
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
+    ft_putchar('%');
+    return (1);
 }
