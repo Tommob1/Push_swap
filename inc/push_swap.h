@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/23 13:59:10 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/23 14:02:46 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,16 @@
 
 typedef struct s_stack_node
 {
-	int                 nbr;
-	int                 index;
-	int                 push_cost;
-	bool                above_median;
-	bool                cheapest;
-	struct s_stack_node *target_node;
-	struct s_stack_node *next;
-	struct s_stack_node *prev;
-    
-}   t_stack_node;
+	int					nbr;
+	int					index;
+	int					push_cost;
+	bool				above_median;
+	bool				cheapest;
+	struct s_stack_node	*target_node;
+	struct s_stack_node	*next;
+	struct s_stack_node	*prev;
+
+}	t_stack_node;
 
 //Error handlers
 int     error_syntax(char   *str_n);
