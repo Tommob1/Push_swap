@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 15:28:11 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/30 15:55:19 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/30 15:56:02 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static void	push(t_stack_node **dst, t_stack_node **src)
 {
-    t_stack_node	*push_node;
+	t_stack_node	*push_node;
 
 	if (!*src)
 		return ;
