@@ -6,7 +6,7 @@
 #    By: btomlins <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/20 12:21:22 by btomlins          #+#    #+#              #
-#    Updated: 2024/04/17 14:00:16 by btomlins         ###   ########.fr        #
+#    Updated: 2024/04/30 14:21:21 by btomlins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,19 +49,19 @@ $(LIBFT):
 all: 				$(NAME)
 
 $(NAME): 			$(OBJ) $(LIBFT)
-					@$(CC) $(CFLAGS) $(INC) $(OBJ) $(LIBFT) -o $(NAME)
+							@$(CC) $(CFLAGS) $(INC) $(OBJ) $(LIBFT) -o $(NAME)
 
 $(OBJ_DIR)%.o:		$(SRC_DIR)%.c 
-					@mkdir -p $(@D)
-					@$(CC) $(CFLAGS) $(INC) -c $< -o $@
+									@mkdir -p $(@D)
+									@$(CC) $(CFLAGS) $(INC) -c $< -o $@
 
 clean:
-					@$(RM) -r $(OBJ_DIR)
-					@make clean -C ./libft
+									@$(RM) -r $(OBJ_DIR)
+									@make clean -C ./libft
 
-fclean: 			clean
-					@$(RM) $(NAME)
-					@$(RM) $(LIBFT)
+fclean: 					clean
+									@$(RM) $(NAME)
+									@$(RM) $(LIBFT)
 
 re: 				fclean all
 
