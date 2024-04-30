@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:59:46 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/30 14:11:47 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/30 14:49:01 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void    sort_stacks(t_stack_node **a, t_stack_node **b)
         pb(b, a, false);
     while (len_a-- > 3 && !stack_sorted(*a))
     {
-        init_nodes_b(*a, *b);
+        init_nodes_a(*a, *b);
         move_a_to_b(a, b);
     }
     sort_three(a);
