@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 15:28:11 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/30 15:54:21 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/30 15:55:19 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static void	push(t_stack_node **dst, t_stack_node **src)
 	if (*src)
 		(*src)->prev = NULL;
 	push_node->prev = NULL;
-	if(!*dst)
+	if (!*dst)
 	{
 		*dst = push_node;
 		push_node->next = NULL;
