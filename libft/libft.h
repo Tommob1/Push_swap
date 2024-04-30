@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 14:04:06 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/23 13:02:57 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/30 13:34:03 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,12 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+# define MAX_FD 1024
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -77,5 +83,9 @@ int				printf_pthex(unsigned int un, const char format);
 int				printf_ptr(unsigned long long ptr);
 int				printf_percent(void);
 char			*ft_itoa(int n);
+char	*process_line(char **stash);
+char	*read_from_fd(int fd);
+char	*get_next_line_helper(char **stash, int fd);
+char	*get_next_line_bonus(int fd); 
 
 #endif
