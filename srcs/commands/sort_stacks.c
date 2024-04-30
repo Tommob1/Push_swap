@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:59:46 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/30 14:08:04 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/04/30 14:11:47 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ static void move_a_to_b(t_stack_node **a, t_stack_node **b)
         rev_rotate_both(a, b, cheapest_node);
     prep_for_push(a, cheapest_node, 'a');
     prep_for_push(b, cheapest_node->target_node, 'b');
+    pb(b, a, false);
 }
 
 static void move_b_to_a(t_stack_node **a, t_stack_node **b)
