@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_a_to_b.c                                       :+:      :+:    :+:   */
+/*   init_a_to_b.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 14:06:44 by btomlins          #+#    #+#             */
-/*   Updated: 2024/03/19 14:06:47 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/05/03 16:00:20 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,8 +63,8 @@ static void set_target_a(t_stack_node *a, t_stack_node *b)
 
 static void cost_analysis_a(t_stack_node *a, t_stack_node *b)
 {
-    int    len_a;
-    int    len_b;
+    int len_a;
+    int len_b;
 
     len_a = stack_len(a);
     len_b = stack_len(b);
