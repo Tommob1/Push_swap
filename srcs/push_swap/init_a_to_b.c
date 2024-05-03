@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 14:06:44 by btomlins          #+#    #+#             */
-/*   Updated: 2024/05/03 16:38:05 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/05/03 16:39:42 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,17 +68,16 @@ static void	cost_analysis_a(t_stack_node *a, t_stack_node *b)
 
 	len_a = stack_len(a);
 	len_b = stack_len(b);
-
 	while (a)
 	{
 		a->push_cost = (a->index);
-			if (!(a->above_median))
-				a->push_cost = len_a - (a->index);
-			if (a->target_node->above_median)
-				a->push_cost += a->target_node->index;
-			else
-				a->push_cost += len_b - (a->target_node->index);
-			a = a->next;
+		if (!(a->above_median))
+			a->push_cost = len_a - (a->index);
+		if (a->target_node->above_median)
+			a->push_cost += a->target_node->index;
+		else
+			a->push_cost += len_b - (a->target_node->index);
+		a = a->next;
 	}
 }
 
@@ -108,5 +107,5 @@ void	init_nodes_a(t_stack_node *a, t_stack_node *b)
 	current_index(b);
 	set_target_a(a, b);
 	cost_analysis_a(a, b);
-	set_cheapest(a);    
+	set_cheapest(a);
 }
