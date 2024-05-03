@@ -14,8 +14,8 @@
 
 static int	count_words(char *s, char c)
 {
-	int count;
-	int inside_word;
+	int	count;
+	int	inside_word;
 
 	count = 0;
 	while (*s)
@@ -52,7 +52,7 @@ static char	*get_next_word(char *s, char c)
 		++len;
 	next_word = malloc((size_t)len * sizeof(char) + 1);
 	if (!next_word)
-		return(NULL);
+		return (NULL);
 	while ((s[cursor] != c) && s[cursor])
 		next_word[i++] = s[cursor++];
 	next_word[i] = '\0';
@@ -78,9 +78,9 @@ char	**split(char *s, char c)
 		{
 			result_array[i] = malloc(sizeof(char));
 			if (!result_array[i])
-				return NULL;
+				return (NULL);
 			result_array[i++][0] = '\0';
-			continue;
+			continue ;
 		}
 		result_array[i++] = get_next_word(s, c);
 	}
