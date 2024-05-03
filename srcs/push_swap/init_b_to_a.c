@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 16:11:53 by btomlins          #+#    #+#             */
-/*   Updated: 2024/05/03 16:42:34 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/05/03 16:44:00 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,15 @@ static void	set_target_b(t_stack_node *a, t_stack_node *b)
 	{
 		best_match_index = LONG_MAX;
 		current_a = a;
-		while(current_a)
+		while (current_a)
 		{
 			if (current_a->nbr > b->nbr
-					&& current_a->nbr < best_match_index)
-				{
-					best_match_index = current_a->nbr;
-					target_node = current_a;
-				}
-				current_a = current_a->next;
+				&& current_a->nbr < best_match_index)
+			{
+				best_match_index = current_a->nbr;
+				target_node = current_a;
+			}
+			current_a = current_a->next;
 		}
 		if (best_match_index == LONG_MAX)
 			b->target_node = find_min(a);
