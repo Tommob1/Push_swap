@@ -6,14 +6,14 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 12:54:55 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/23 12:58:17 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/05/04 14:33:36 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int printf_percent(void)
+int	printf_percent(void)
 {
-    ft_putchar('%');
-    return (1);
+	ft_putchar('%');
+	return (1);
 }
