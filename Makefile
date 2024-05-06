@@ -6,7 +6,7 @@
 #    By: btomlins <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/20 12:21:22 by btomlins          #+#    #+#              #
-#    Updated: 2024/04/30 14:21:21 by btomlins         ###   ########.fr        #
+#    Updated: 2024/05/06 16:47:41 by btomlins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ COMMANDS_DIR		=	$(SRC_DIR)commands/push.c \
 						$(SRC_DIR)commands/rotate.c \
 						$(SRC_DIR)commands/sort_stacks.c \
 						$(SRC_DIR)commands/sort_three.c \
+						$(SRC_DIR)commands/stack_ops.c \
 						$(SRC_DIR)commands/swap.c
 
 PUSH_SWAP_DIR		=	$(SRC_DIR)push_swap/handle_errors.c \
