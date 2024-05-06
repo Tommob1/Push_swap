@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/05/06 16:22:12 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/05/06 16:53:27 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,9 @@ void			pb(t_stack_node **b, t_stack_node **a, bool print);
 //Algorthims
 void			sort_three(t_stack_node **a);
 void			sort_stacks(t_stack_node **a, t_stack_node **b);
+void	rotate_both(t_stack_node **a, t_stack_node **b,
+t_stack_node *cheapest_node);
+void	rev_rotate_both(t_stack_node **a, t_stack_node **b,
+t_stack_node *cheapest_node);
 
 #endif
