@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 16:19:00 by btomlins          #+#    #+#             */
-/*   Updated: 2024/04/23 14:51:16 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/05/28 16:17:18 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,19 @@ int	main(int argc, char **argv)
 {
 	t_stack_node	*a;
 	t_stack_node	*b;
+	int				arg_type;
 
+	arg_type = 1;
 	a = NULL;
 	b = NULL;
 	if (argc == 1 || (argc == 2 && !argv[1][0]))
 		return (1);
-	else if (argc == 2)
-		argv = split(argv[1], ' ');
-	init_stack_a(&a, argv + 1);
+	if (argc == 2)
+	{
+		arg_type = 0;
+		argv = ft_split(argv[1], ' ');
+	}
+	init_stack_a(&a, argv + arg_type);
 	if (!stack_sorted(a))
 	{
 		if (stack_len(a) == 2)
@@ -33,6 +38,5 @@ int	main(int argc, char **argv)
 		else
 			sort_stacks(&a, &b);
 	}
-	free_stack(&a);
-	return (0);
+	return (free_stack(&a));
 }

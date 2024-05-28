@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 12:21:05 by btomlins          #+#    #+#             */
-/*   Updated: 2024/05/15 13:10:47 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/05/28 16:20:20 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ typedef struct s_stack_node
 //Error handlers
 int				error_syntax(char *str_n);
 int				error_duplicate(t_stack_node *a, int n);
-void			free_stack(t_stack_node **stack);
+int				free_stack(t_stack_node **stack);
 void			free_errors(t_stack_node **a);
 
 //Linked-list init

@@ -6,7 +6,7 @@
 /*   By: btomlins <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 16:31:22 by btomlins          #+#    #+#             */
-/*   Updated: 2024/05/03 15:54:41 by btomlins         ###   ########.fr       */
+/*   Updated: 2024/05/28 16:17:59 by btomlins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,13 +40,13 @@ int	error_duplicate(t_stack_node *a, int n)
 	return (0);
 }
 
-void	free_stack(t_stack_node **stack)
+int	free_stack(t_stack_node **stack)
 {
 	t_stack_node	*tmp;
 	t_stack_node	*current;
 
 	if (!stack)
-		return ;
+		return (0);
 	current = *stack;
 	while (current)
 	{
@@ -56,6 +56,7 @@ void	free_stack(t_stack_node **stack)
 		current = tmp;
 	}
 	*stack = NULL;
+	return (0);
 }
 
 void	free_errors(t_stack_node **a)
